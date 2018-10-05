@@ -1,0 +1,194 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #ED174C;
+    color: #FFF;
+    padding: 1% 0;
+    border: 2px solid;
+    width: 100%;
+}
+
+.navbar-default .navbar-brand {
+    color: #777777;
+}
+
+.icon {
+    max-width: 200px;
+    margin: 1% auto;    
+}
+
+@media (max-width: 600px) {
+
+    .icon {
+        max-width: 150px;
+    }
+
+}
+
+h2 {
+    font-size: 50px;
+    color: #006BB6;
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 #FFF,
+        2px 2px 0 #FFF,
+        2px 2px 0 #FFF,
+        -1px -1px 0 #FFF,
+        0px 1px 0 #FFF,
+        0px -1px 0 #FFF,
+        -1px 0px 0 #FFF,
+        1px 0px 0 #FFF,
+        2px 2px 0 #FFF,
+        -2px 2px 0 #FFF,
+        2px -2px 0 #FFF,
+        -2px -2px 0 #FFF,
+        0px 2px 0 #FFF,
+        0px -2px 0 #FFF,
+        -2px 0px 0 #FFF,
+        2px 0px 0 #FFF,
+        1px 2px 0 #FFF,
+        -1px 2px 0 #FFF,
+        1px -2px 0 #FFF,
+        -1px -2px 0 #FFF,
+        2px 1px 0 #FFF,
+        -2px 1px 0 #FFF,
+        2px -1px 0 #FFF,
+        -2px -1px 0 #FFF;
+    text-align: center;
+}
+
+#formbox {
+    height: 350px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #F9A01B;
+    margin: 40px auto; 
+    margin-top: -4%;
+    display: none;
+}
+
+
+#titletext {
+    font-size: 40px;
+    font-family: Impact, Charcoal, sans-serif;
+    text-align: center;
+}
+
+input[type=text]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 2%;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Times New Roman;
+    font-size: 15px;
+}
+
+#text{}
+
+select {
+    padding: 120px;
+    margin: 2%;
+    font-family: Times New Roman;
+    font-size: 17px;
+}
+
+#buttonformat {
+    width: 50%;
+    margin: auto;
+    background-color: #552583;
+    color: white;
+    padding: 14px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.centerelement {
+    display: flex;
+    margin-top: 3%;
+    text-align: center;    
+}
+
+#tables {
+    margin: 2% 0 0 3%;
+}
+
+#navtext {
+    margin-top: 3%;
+    color: white;
+    font-size: 20px;
+}
+
+#icon {
+    margin-top: -4%;    
+    height: 190px; 
+    width: 300px;
+}
+
+#statsicon {
+    height: 150px;
+    width: 350px;
+}
+
+#starticon {
+    height: 150px;
+    width: 200px;
+}
+
+.welcome-text {
+    font-size: 25px;
+    font-family: Charcoal, sans-serif;
+}
+.container {
+    margin-top: 10%;
+}
+
+#list{
+    width: 45%;
+    float: left;
+}
+
+#team_list {
+    float: right; 
+    width: 45%;
+}
+
+#team_players {
+    width: 50%;
+}
+
+#stats-box {
+    height: 450px;
+    width: 50%;
+    border: 2px solid black;
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: -5% auto; 
+    display: none;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#end-button {
+    width: 50%;
+    margin: auto;
+    color: white;
+    padding: 14px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 17px;    
+    text-align: center;
+    margin-top: 1%;
+
+}
