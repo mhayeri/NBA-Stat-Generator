@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css "href="style.css">
+        <script src="javascript/project.js"></script>
+
+        <title>NBA Analytics</title>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse">
+            <div class='container-fluid'>
+
+                <a class="navbar-brand" href="#" id="titletext">NBA ANALYTICS</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active" id="home"><a href="#">Home</a></li>
+                        <li id="info"><a href="#">Get Stats!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row welcome-text">
+                <div class="col-sm-4 column">
+                    <img src="http://www.stickpng.com/assets/images/58428defa6515b1e0ad75ab4.png" class="img-responsive icon">
+                    <h4>The National Basketball Association is a professional basketball league comprised of 30 teams across North America featuring the best basketball players in the world.</h4>
+                </div>
+                <div class="col-sm-4 column">
+                    <img src="https://nycdatascience.com/blog/wp-content/uploads/2017/02/nbastats-e1487558616572.png" class="img-responsive icon">
+                    <h4>The National Basketball Association is a professional basketball league comprised of 30 teams across North America featuring the best basketball players in the world.</h4>
+                </div>
+                <div class="col-sm-4 column">
+                    <img src="https://crowdfundingexposure.com/wp-content/uploads/2016/08/get-started.png" class="img-responsive icon"  >
+                    <h4>To get started, click on the 'Get Stats' button located at the top of the page in order to receive your favorite players' seasonal statistics!</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--The form box that will allow the user to submit specific information about any player -->
+        <div id="formbox" data-role="page">
+            <div data-role="header">
+                <h2 id="header-text">NBA Stats Generator</h2>
+            </div>
+            <div data-role="main" class="ui-content">
+                <form id="player" method="get">
+                    <select id="team_list">
+                        <option value="team">Select Current Team</option>
+                        <option value="Bucks">Bucks</option>
+                        <option value="Bulls">Bulls</option>
+                        <option value="Cavaliers">Cavaliers</option>
+                        <option value="Celtics">Celtics</option>
+                        <option value="Clippers">Clippers</option>
+                        <option value="Grizzlies">Grizzlies</option>
+                        <option value="Hawks">Hawks</option>
+                        <option value="Heat">Heat</option>
+                        <option value="Hornets">Hornets</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Kings">Kings</option>
+                        <option value="Knicks">Knicks</option>
+                        <option value="Lakers">Lakers</option>
+                        <option value="Magic">Magic</option>
+                        <option value="Mavericks">Mavericks</option>
+                        <option value="Nets">Nets</option>
+                        <option value="Nuggets">Nuggets</option>
+                        <option value="Pacers">Pacers</option>
+                        <option value="Pelicans">Pelicans</option>
+                        <option value="Pistons">Pistons</option>
+                        <option value="Raptors">Raptors</option>
+                        <option value="Rockets">Rockets</option>
+                        <option value="76ers">76ers</option>
+                        <option value="Spurs">Spurs</option>
+                        <option value="Suns">Suns</option>
+                        <option value="Thunder">Thunder</option>
+                        <option value="Timberwolves">Timberwolves</option>
+                        <option value="Trail Blazers">Trail Blazers</option>
+                        <option value="Warriors">Warriors</option>
+                        <option value="Wizards">Wizards</option>
+                    </select>
+                    <select id="list">
+                        <option value="season">Select Season</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                    </select>
+                    <select id="team_players">
+                        <option value="players">Select Player</option>
+                    </select>
+
+                    <div>
+
+                        <!--CHECKBOXES-->
+                        <fieldset data-role="controlgroup" data-type="horizontal" >
+                            <div id="tables">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td><input type="checkbox" name="stats" id="points" value="points">
+                                            <label for="points">Points</label></td>
+                                        <td><input type="checkbox" name="stats" id="rebounds" value="rebounds">
+                                            <label for="rebounds">Rebounds</label></td>
+                                        <td><input type="checkbox" name="stats" id="steals" value="steals">
+                                            <label for="steals">Steals</label></td>
+                                        <td><input type="checkbox" name="stats" id="minutes" value="minutes">
+                                            <label for="minutes">Minutes</label>
+                                        <td><input type="checkbox" name="stats" id="three_points_pct" value="three_points_pct">
+                                            <label for="three_points_pct">Three Point %</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="stats" id="assists" value="assists">
+                                            <label for="assists">Assists</label></td>
+                                        <td>
+                                            <input type="checkbox" name="stats" id="turnovers" value="turnovers">
+                                            <label for="turnovers">Turnovers</label>
+                                        </td>
+                                        <td><input type="checkbox" name="stats" id="blocks" value="blocks">
+                                            <label for="blocks">Blocks</label></td>
+                                        <td><input type="checkbox" name="stats" id="free_throws_pct" value="free_throws_pct">
+                                            <label for="free_throws_pct">Free Throw %</label>
+                                        <td><input type="checkbox" name="stats" id="field_goals_pct" value="field_goals_pct">
+                                            <label for="field_goals_pct">Field Goal %</label>
+                                    </tr>
+                                </table>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="centerelement">
+                        <button id="buttonformat">Submit</button>  
+                    </div>   
+                </form>
+            </div>
+        </div>
+        
+        <!-- final box that should appear and display the stats -->
+        <div id="stats-box">
+
+        </div>     
+    </body>
+</html>
